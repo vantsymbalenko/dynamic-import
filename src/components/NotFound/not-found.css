@@ -1,0 +1,16 @@
+.not-found{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.not-found h2{
+    color: gray;
+}
+
+.not-found{
+    font-size: 18px;
+    line-height: 3em;
+    color: gray;
+}

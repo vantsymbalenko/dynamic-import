@@ -9,6 +9,9 @@ import {Footer} from "components/Footer/Footer";
 //json
 import {tabs} from 'json/tabs.js';
 
+//styles
+import "App.css";
+
 class App extends Component {
     constructor(props){
         super(props);
@@ -26,11 +29,11 @@ class App extends Component {
 
   render() {
     return (
-      <React.Fragment>
-        <Tabs tabs={this.state.tabs}/>
+      <div className={"app"}>
+        <Tabs tabs={this.state.tabs} pathname={this.props.location.pathname}/>
         <Routes routes={this.state.tabs}/>
         <Footer/>
-      </React.Fragment>
+      </div>
 
     );
   }
